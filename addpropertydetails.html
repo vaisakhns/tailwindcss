@@ -1,0 +1,85 @@
+<div class="min-h-screen bg-gray-50">
+    <div class="max-w-2xl mx-auto bg-white min-h-screen p-6 sm:p-8">
+      <!-- Header -->
+      <div class="flex justify-between items-start mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-purple-600">Add property</h1>
+        <!-- Logo placeholder -->
+        <div class="logo-container"></div>
+      </div>
+  
+      <form class="space-y-8">
+        <!-- Property Type -->
+        <div class="space-y-4">
+          <label class="text-lg sm:text-xl text-gray-900">Type of property</label>
+          <div class="flex flex-wrap gap-4">
+            <!-- Property type radio buttons -->
+            <label class="px-6 py-3 rounded-lg border-2 cursor-pointer capitalize transition-colors bg-purple-600 text-white border-purple-600">
+              <input type="radio" name="propertyType" value="flat" class="hidden" checked />
+              Flat
+            </label>
+            <label class="px-6 py-3 rounded-lg border-2 cursor-pointer capitalize transition-colors border-gray-200 hover:border-purple-200">
+              <input type="radio" name="propertyType" value="house" class="hidden" />
+              House
+            </label>
+            <label class="px-6 py-3 rounded-lg border-2 cursor-pointer capitalize transition-colors border-gray-200 hover:border-purple-200">
+              <input type="radio" name="propertyType" value="land" class="hidden" />
+              Land
+            </label>
+          </div>
+        </div>
+  
+        <!-- Location -->
+        <div class="space-y-4">
+          <label class="text-lg sm:text-xl text-gray-900">Location</label>
+          <div class="space-y-4">
+            <!-- District Select -->
+            <div class="relative w-full h-14 bg-pink-50 rounded-md">
+              <select class="w-full h-full px-4 appearance-none bg-transparent border-none text-base">
+                <option value="" disabled selected>District</option>
+                <option value="thrissur">Thrissur</option>
+                <option value="ernakulam">Ernakulam</option>
+                <option value="kozhikode">Kozhikode</option>
+              </select>
+            </div>
+  
+            <!-- Location Select -->
+            <div class="relative w-full h-14 bg-pink-50 rounded-md">
+              <select class="w-full h-full px-4 appearance-none bg-transparent border-none text-base">
+                <option value="" disabled selected>Location</option>
+                <option value="location1">anchery</option>
+                <option value="location2">ollur</option>
+                <option value="location3">chiyaram</option>
+              </select>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Rate -->
+        <div class="space-y-4">
+          <label class="text-lg sm:text-xl text-gray-900">Rate</label>
+          <input 
+            type="number" 
+            placeholder="Rate in Rupees" 
+            class="w-full h-14 bg-pink-50 border-none text-base rounded-md px-4"
+            required
+          />
+        </div>
+  
+        <!-- Navigation Buttons -->
+        <div class="flex justify-between items-center pt-4">
+          <button 
+            type="button"
+            class="text-lg sm:text-xl text-purple-600 hover:text-purple-700 px-6"
+          >
+            Back
+          </button>
+          <button 
+            type="submit"
+            class="text-lg sm:text-xl px-8 py-6 bg-gradient-to-r from-red-500 via-purple-500 to-purple-600 hover:opacity-90 transition-opacity rounded-md text-white"
+          >
+            Next
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>

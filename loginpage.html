@@ -1,0 +1,70 @@
+<!-- Container -->
+<div class="min-h-screen flex items-center justify-center bg-gray-50 p-4">
+  <!-- Card -->
+  <div class="w-full sm:max-w-md lg:max-w-lg bg-white rounded-3xl p-6 sm:p-8 lg:p-12 relative">
+    <!-- Decorative blobs -->
+    <div class="absolute top-4 left-4 w-12 h-12 sm:w-16 sm:h-16 bg-purple-500/20 rounded-full blur-xl"></div>
+    <div class="absolute top-4 right-4 w-16 h-16 sm:w-20 sm:h-20 bg-purple-600/20 rounded-full blur-xl"></div>
+    <div class="absolute bottom-4 right-8 w-8 h-8 sm:w-12 sm:h-12 bg-purple-400/20 rounded-full blur-lg"></div>
+
+    <!-- Form -->
+    <form class="relative space-y-6 sm:space-y-8">
+      <!-- Logo container -->
+      <div class="text-center">
+        <!-- Add your logo here -->
+      </div>
+
+      <!-- Phone input group -->
+      <div class="space-y-2">
+        <label class="text-gray-500 text-sm sm:text-base">Phone number</label>
+        <div class="relative">
+          <!-- User icon would go here -->
+          <input type="tel" placeholder="Phone number" 
+            class="w-full pl-10 h-12 sm:h-14 border-gray-200 text-base sm:text-lg rounded-md border"
+            required />
+        </div>
+      </div>
+
+      <!-- Password input group -->
+      <div class="space-y-2">
+        <label class="text-gray-500 text-sm sm:text-base">Password</label>
+        <div class="relative">
+          <!-- Key icon would go here -->
+          <input type="password" placeholder="••••••••" 
+            class="w-full pl-10 pr-10 h-12 sm:h-14 border-gray-200 text-base sm:text-lg rounded-md border"
+            required />
+          <!-- Eye icon button would go here -->
+        </div>
+      </div>
+
+      <!-- Forgot password -->
+      <div class="text-right">
+        <button type="button" class="text-gray-500 font-normal p-0 text-sm sm:text-base">
+          Forgot Password?
+        </button>
+      </div>
+
+      <!-- Sign in button -->
+      <button type="submit" 
+        class="w-full h-12 sm:h-14 text-lg sm:text-xl bg-gradient-to-r from-red-500 via-purple-500 to-purple-600 hover:opacity-90 transition-opacity rounded-md text-white">
+        Sign in
+      </button>
+
+      <!-- Divider -->
+      <div class="relative py-4">
+        <div class="absolute inset-0 flex items-center">
+          <div class="w-full border-t border-gray-200"></div>
+        </div>
+        <div class="relative flex justify-center">
+          <span class="bg-white px-4 text-sm sm:text-base text-gray-500">Or</span>
+        </div>
+      </div>
+
+      <!-- Sign up button -->
+      <button type="button" 
+        class="w-full h-12 sm:h-14 text-lg sm:text-xl border-2 border-purple-500 text-purple-500 hover:bg-purple-50 rounded-md">
+        Sign up
+      </button>
+    </form>
+  </div>
+</div>

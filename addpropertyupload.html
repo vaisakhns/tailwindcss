@@ -1,0 +1,53 @@
+<div class="min-h-screen bg-gray-50">
+    <div class="max-w-2xl mx-auto bg-white min-h-screen p-6 sm:p-8">
+      <!-- Header -->
+      <div class="flex justify-end mb-8">
+        <!-- Logo placeholder -->
+        <div class="logo-container"></div>
+      </div>
+  
+      <!-- Image Grid -->
+      <div class="grid grid-cols-2 gap-4 mb-auto">
+        <!-- Example of an uploaded image container -->
+        <div class="relative aspect-[4/3] rounded-lg overflow-hidden border">
+          <img src="/placeholder.svg" alt="Property 1" class="absolute inset-0 w-full h-full object-cover" />
+          <button 
+            class="absolute top-2 right-2 bg-purple-600 hover:bg-purple-700 text-white rounded-full w-8 h-8 flex items-center justify-center"
+          >
+            <!-- X icon placeholder -->
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+  
+        <!-- Upload button/container -->
+        <label class="relative aspect-[4/3] rounded-lg border-2 border-dashed border-gray-300 hover:border-purple-400 transition-colors cursor-pointer flex items-center justify-center bg-gray-50">
+          <div class="flex flex-col items-center gap-2">
+            <!-- Plus icon placeholder -->
+            <svg class="h-8 w-8 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+            <span class="text-sm text-gray-500">Add Image</span>
+          </div>
+          <input type="file" accept="image/*" class="hidden" />
+        </label>
+      </div>
+  
+      <!-- Navigation Buttons -->
+      <div class="flex justify-between items-center mt-8">
+        <button 
+          type="button"
+          class="text-lg sm:text-xl text-purple-600 hover:text-purple-700 px-6"
+        >
+          Back
+        </button>
+        <button 
+          type="button"
+          class="text-lg sm:text-xl px-8 py-6 bg-gradient-to-r from-red-500 via-purple-500 to-purple-600 hover:opacity-90 transition-opacity rounded-md text-white"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
