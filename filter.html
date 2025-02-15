@@ -1,0 +1,120 @@
+<!-- Main Container -->
+<div class="min-h-screen bg-white">
+  <div class="max-w-2xl mx-auto">
+    <!-- Header -->
+    <header class="flex items-center justify-between p-4 sm:p-6">
+      <button class="text-purple-600">
+        <!-- Back Arrow Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+      </button>
+      <!-- Logo placeholder -->
+      <div class="text-xl font-bold">Logo</div>
+    </header>
+
+    <!-- Title -->
+    <div class="flex items-center gap-2 px-4 sm:px-6 mb-6">
+      <!-- Sliders Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="4" y1="21" x2="4" y2="14"/>
+        <line x1="4" y1="10" x2="4" y2="3"/>
+        <line x1="12" y1="21" x2="12" y2="12"/>
+        <line x1="12" y1="8" x2="12" y2="3"/>
+        <line x1="20" y1="21" x2="20" y2="16"/>
+        <line x1="20" y1="12" x2="20" y2="3"/>
+        <line x1="1" y1="14" x2="7" y2="14"/>
+        <line x1="9" y1="8" x2="15" y2="8"/>
+        <line x1="17" y1="16" x2="23" y2="16"/>
+      </svg>
+      <h1 class="text-2xl sm:text-3xl font-bold text-purple-600">Filter</h1>
+    </div>
+
+    <div class="px-4 sm:px-6 space-y-6">
+      <!-- Property Type -->
+      <div class="space-y-4">
+        <div class="flex flex-wrap gap-4">
+          <!-- Property Type Radio Buttons -->
+          <label class="px-6 py-3 rounded-lg border-2 cursor-pointer capitalize bg-purple-600 text-white border-purple-600">
+            <input type="radio" name="propertyType" value="flat" class="hidden" checked>
+            <span>flat</span>
+          </label>
+          <label class="px-6 py-3 rounded-lg border-2 cursor-pointer capitalize border-gray-200 hover:border-purple-200">
+            <input type="radio" name="propertyType" value="house" class="hidden">
+            <span>house</span>
+          </label>
+          <label class="px-6 py-3 rounded-lg border-2 cursor-pointer capitalize border-gray-200 hover:border-purple-200">
+            <input type="radio" name="propertyType" value="land" class="hidden">
+            <span>land</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Filter Grid -->
+      <div class="grid grid-cols-12 gap-6">
+        <!-- Sidebar -->
+        <div class="col-span-4 space-y-4">
+          <button class="w-full p-4 rounded-lg text-purple-600 bg-purple-100 cursor-pointer transition-colors">
+            Location
+          </button>
+          <button class="w-full p-4 rounded-lg text-gray-900 bg-pink-50 hover:bg-pink-100 cursor-pointer transition-colors">
+            Rate
+          </button>
+          <button class="w-full p-4 rounded-lg text-gray-900 bg-pink-50 hover:bg-pink-100 cursor-pointer transition-colors">
+            BHK
+          </button>
+          <button class="w-full p-4 rounded-lg text-gray-900 bg-pink-50 hover:bg-pink-100 cursor-pointer transition-colors">
+            Sqft
+          </button>
+        </div>
+
+        <!-- Filter Content -->
+        <div class="col-span-8 space-y-4">
+          <!-- District Select -->
+          <div class="relative">
+            <select class="w-full h-14 bg-pink-50 rounded-lg px-4 appearance-none focus:outline-none focus:ring-2 focus:ring-purple-500">
+              <option value="" disabled selected>District</option>
+              <option value="thrissur">Thrissur</option>
+              <option value="ernakulam">Ernakulam</option>
+              <option value="kozhikode">Kozhikode</option>
+            </select>
+            <!-- Custom dropdown arrow -->
+            <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+              <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Location Select -->
+          <div class="relative">
+            <select class="w-full h-14 bg-pink-50 rounded-lg px-4 appearance-none focus:outline-none focus:ring-2 focus:ring-purple-500">
+              <option value="" disabled selected>Location</option>
+              <option value="location1">Location 1</option>
+              <option value="location2">Location 2</option>
+              <option value="location3">Location 3</option>
+            </select>
+            <!-- Custom dropdown arrow -->
+            <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+              <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Buttons -->
+    <div class="fixed bottom-0 left-0 right-0 p-4 bg-white border-t">
+      <div class="max-w-2xl mx-auto flex justify-between gap-4">
+        <button class="text-purple-600 text-lg flex-1 px-4 py-3 rounded-lg hover:bg-gray-50">
+          Clear all
+        </button>
+        <button class="text-lg px-8 py-6 bg-gradient-to-r from-red-500 via-purple-500 to-purple-600 hover:opacity-90 transition-opacity flex-1 text-white rounded-lg">
+          Apply filter
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
